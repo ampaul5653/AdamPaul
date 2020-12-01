@@ -19,6 +19,8 @@
         <ul> <a class="c" href="#">Projects</a></ul>
         <ul> <a class="d" href="#">Contact</a></ul>
         <ul> <a class="e" href="#">Credentials</a></ul>
+        <ul> <a class="f" href="#">Course Summary</a></ul>
+        <ul> <a class="g" href="#">Course Reflection</a></ul>
     </div>
     <div class="content">
 
@@ -84,7 +86,7 @@
         </div>
 
         <div class="contact" style="z-index: 10;">
-            <div>
+            <div style="margin-left: 13.5%">
                 <div class="column">
                     <figure><a href="https://www.linkedin.com/in/adam-paul-0450561b9/"><img src="pics/linkdin.png" alt="LinkedIn" style="width:130px;height:130px; margin-right: 50px;">
                             <figcaption class="figcaps" style="margin-left: 0px;">LinkedIn</figcaption>
@@ -120,6 +122,82 @@
             
             
         </div>
+        
+        <div class="course" style="z-index: 10;">
+            <br>
+            <h1>Disclaimer: This section was made for a class project and has no bearing on the rest of my portfolio.</h1>
+            <br>
+            <h1><center>Summary</center></h1>
+            <p>     Overall, I found this class to be unlike any other I've taken at FGCU. Through it, I was able to build
+                critical analysis skills that I have been unable to hone in any of my software engineering courses so far.
+                Critiquing projects not just from a design standpoint, but from a sociocultural impact standpoint was 
+                a lot of fun, and I thoroughly enjoyed such projects. As someone who is also largely into the ethical components
+                of engineering, it was very interesting to see and hear my peers' thoughts and priorities on matters such as 
+                global warming and the future of nanotechnologies. Additionally, though the group assignments could cause 
+                much grief in scenarios where you're placed with an uncooperative group, I always felt that any given
+                group I was a part of was able to respect one another on a level I've not experienced in other classes.
+                Overall, I feel that the conduct involved in the exchange of ideas within this course is a skill I can
+                carry over to my work as a professional in the field of software engineering.</p>
+            <br>
+            <h1><center>Current Efforts to Solve Global Challenges</center></h1>
+            <br>
+            <iframe src="%5BAdam%20Paul%5D%20Impact%20of%20Current%20Efforts%20.pdf" width="100%" height="500px">
+            </iframe>
+            <br>
+            <p>    In this project, I felt that I was able to gain a finer appreciation for the iterative and incremental
+                software design process. Both of the pieces of technology that I discussed were simply stepping stones
+                on the path to a larger goal. SCANCIF was simply a tool for code analysis that pointed out vulnerabilities in
+                developer code, created entirely in an effort to assist developers in improving the HTML-5 framework. Meanwhile,
+                two-factor authentication was a major innovation in security that is now being used as a basis for further innovations,
+                such as quantum one time password generation. While both of these projects are great achievements on their own, they go
+                the extra mile by serving as model software projects that further the continuous improvement of existing tech.</p>
+            <br>
+            <h1><center>Future Solutions: A Smartphone for the Disabled</center></h1>
+            <br>
+            <iframe src="phonePoster.pdf" width="100%" height="500px">
+            </iframe>
+            <br>
+            <p>     As a disabled person myself, I always make an effort to spot ways in which technology I use daily
+                might be unusable for the disabled. Thus, when my team and I were discussing project ideas for a conceptual 
+                project that solves a real problem, smartphones came to mind near-instantly. While smartphoens have changed
+                our lives significantly over the past decade, the fact remains that many people can't experience all the 
+                benefits that they provide. For example, the blind cannot navigate screens effectively and the deaf are
+                unable to partake in regular phone calls. Thus, we decided that a smartphone designed for disabled people
+                would be the perfect project idea. The smartphone would have advanced accessibility features such as
+                speech-to-text, text-to-speech, eye-control, voice control, and more. Further, the phone would be
+                support accessibility-related peripheral devices via USB, adding more functionality such as blinking lights
+                depending on what the peripheral developer designed. Overall, I felt that this project both gave us a wider appreciation
+                of all the technology that we're able to use daily and gave myself and my teammates a more critical eye as to
+                what truly makes a product accessible.</p>
+        </div>
+        
+        <div class="reflection" style="z-index: 10;">
+             <br>
+             <h1>Disclaimer: This section was made for a class project and has no bearing on the rest of my portfolio.</h1>
+             <br>
+             <h1><center>Sustainability</center></h1>
+             <br>
+             <dd></dd>
+             <dd></dd>
+             <dd></dd>
+             <br>
+             <h1><center>Health</center></h1>
+             <br>
+             <dd></dd>
+             <dd></dd>
+             <dd></dd>
+             <br>
+             <h1><center>Security</center></h1>
+             <br>
+             <dd></dd>
+             <dd></dd>
+             <dd></dd>
+             <br>
+             <h1><center>The Joy of Living</center></h1>
+             <br>
+             <p> Every link in this module was unpopulated, so I cannot say anything about it. </p>
+             <br>
+        </div>
 
         <div class="home2" style="z-index: 0">
             <h1>Adam Paul</h1>
@@ -142,11 +220,15 @@
                 $c = $('.c'),
                 $d = $('.d'),
                 $e = $('.e'),
+                $f = $('.f'),
+                $g = $('.g'),
                 $home = $('.home'),
                 $about = $('.about'),
                 $projects = $('.projects'),
                 $contact = $('.contact'),
-                $credentials = $('.credentials');
+                $credentials = $('.credentials'),
+                $course = $('.course')
+                $reflection = $('.reflection')
 
             $a.click(function() {
                 $home.fadeIn();
@@ -154,6 +236,8 @@
                 $projects.fadeOut();
                 $contact.fadeOut();
                 $credentials.fadeOut();
+                $course.fadeOut();
+                $reflection.fadeOut();
             });
 
             $b.click(function() {
@@ -162,6 +246,8 @@
                 $projects.fadeOut();
                 $contact.fadeOut();
                 $credentials.fadeOut();
+                $course.fadeOut();
+                $reflection.fadeOut();
             });
 
             $c.click(function() {
@@ -170,6 +256,8 @@
                 $projects.fadeIn();
                 $contact.fadeOut();
                 $credentials.fadeOut();
+                $course.fadeOut();
+                $reflection.fadeOut();
             });
 
             $d.click(function() {
@@ -178,6 +266,8 @@
                 $projects.fadeOut();
                 $contact.fadeIn();
                 $credentials.fadeOut();
+                $course.fadeOut();
+                $reflection.fadeOut();
             });
             
             $e.click(function() {
@@ -186,6 +276,28 @@
                 $projects.fadeOut();
                 $contact.fadeOut();
                 $credentials.fadeIn();
+                $course.fadeOut();
+                $reflection.fadeOut();
+            });
+            
+            $f.click(function() {
+                $home.fadeOut();
+                $about.fadeOut();
+                $projects.fadeOut();
+                $contact.fadeOut();
+                $credentials.fadeOut();
+                $course.fadeIn();
+                $reflection.fadeOut();
+            });
+            
+            $g.click(function() {
+                $home.fadeOut();
+                $about.fadeOut();
+                $projects.fadeOut();
+                $contact.fadeOut();
+                $credentials.fadeOut();
+                $course.fadeOut();
+                $reflection.fadeIn();
             });
 
         });
